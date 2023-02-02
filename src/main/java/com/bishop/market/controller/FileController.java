@@ -2,7 +2,6 @@ package com.bishop.market.controller;
 
 import com.bishop.market.entities.Archivo;
 import com.bishop.market.service.FileServices;
-import com.bishop.market.service.ProductServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -16,7 +15,6 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
-import java.util.UUID;
 
 @RestController
 @RequestMapping("files")

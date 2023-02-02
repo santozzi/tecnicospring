@@ -1,6 +1,6 @@
 package com.bishop.market.service;
 
-import com.bishop.market.entities.Articulo;
+import com.bishop.market.entities.articulo.Articulo;
 import com.bishop.market.model.crud.ArticuloCrudRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

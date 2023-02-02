@@ -1,10 +1,8 @@
 package com.bishop.market.controller;
 
-import com.bishop.market.entities.Articulo;
+import com.bishop.market.entities.articulo.Articulo;
 
-import com.bishop.market.entities.Product;
 import com.bishop.market.service.ArticuloServices;
-import com.bishop.market.service.ProductServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

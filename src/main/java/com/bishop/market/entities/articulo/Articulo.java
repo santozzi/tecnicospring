@@ -1,8 +1,8 @@
-package com.bishop.market.entities;
+package com.bishop.market.entities.articulo;
 
 import javax.persistence.*;
 import java.util.Date;
-
+@Inheritance(strategy = InheritanceType.JOINED)
 @Entity
 @Table(name="articulos")
 public class Articulo {
