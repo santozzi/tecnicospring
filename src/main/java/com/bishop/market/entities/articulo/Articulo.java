@@ -1,33 +1,46 @@
 package com.bishop.market.entities.articulo;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.Date;
-@Inheritance(strategy = InheritanceType.JOINED)
+
+
 @Entity
-@Table(name="articulos")
-public class Articulo {
+@Inheritance(strategy = InheritanceType.JOINED)
+@Table(name = "articulos")
+public class Articulo implements Serializable {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name="id_articulos")
-    private int id;
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @Column(name = "id", nullable = false)
+    private Long id;
     private String tipo;
     private String marca;
     private String modelo;
-    @Column(name="serie_prov")
+
     private String serieProv;
-    @Column(name="serie_def")
+
     private String serieDef;
-    @Column(name="a_cargo_de")
+
     private String aCargoDe;
     private Date ingreso;
+    private String detalle;
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public String getDetalle() {
+        return detalle;
+    }
+
+    public void setDetalle(String detalle) {
+        this.detalle = detalle;
+    }
+
+    public void setId(Long id) {
         this.id = id;
     }
+
 
     public String getTipo() {
         return tipo;

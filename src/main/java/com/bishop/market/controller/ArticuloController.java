@@ -2,7 +2,8 @@ package com.bishop.market.controller;
 
 import com.bishop.market.entities.articulo.Articulo;
 
-import com.bishop.market.service.ArticuloServices;
+import com.bishop.market.entities.articulo.computadora.Computadora;
+import com.bishop.market.service.articulo.ArticuloServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -26,7 +27,7 @@ public class ArticuloController {
         }
 
     @PostMapping("save")
-    public Articulo save(@RequestBody Articulo articulo){
+    public Articulo save(@RequestBody Computadora articulo){
             return  articuloServices.save(articulo);
     }
 

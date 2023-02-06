@@ -30,10 +30,12 @@ dependencies {
 // https://mvnrepository.com/artifact/org.mariadb.jdbc/mariadb-java-client
 	//implementation 'org.mariadb.jdbc:mariadb-java-client'
 	// https://mvnrepository.com/artifact/mysql/mysql-connector-java
+
+	annotationProcessor 'org.mapstruct:mapstruct-processor:1.5.2.Final'
 	implementation 'mysql:mysql-connector-java:8.0.32'
 
 
-	annotationProcessor 'org.mapstruct:mapstruct-processor:1.5.2.Final'
+
 }
 
 tasks.named('test') {
